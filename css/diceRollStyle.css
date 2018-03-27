@@ -1,0 +1,82 @@
+body{
+  color: #e6e6e6;
+  font-size: 1em;
+  font-family: verdana, trebuchet, arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  min-height: 100vh;
+  background-color: #1a1a1a;
+  /*linear-gradient(top, #0D0D0D, #1a1a1a, #0D0D0D) no-repeat fixed center;*/
+  background: url("../images/backgroundswatch.jpg") repeat fixed;
+}
+
+img{
+
+	width: 80%;
+	height: auto;
+}
+
+
+#d4, #d6, #d8, #d10, #d12, #d20, #d100, #d100all{
+	cursor: pointer;
+	display: inline-block;
+	text-align: center;
+	font-size: 1.4em;
+	border-right: 5px solid #e6e6e6;
+	border-bottom: 5px solid #e6e6e6;
+	border-left: 1px solid #e6e6e6;
+	border-top: 1px solid #e6e6e6;
+	margin: 10px;
+	border-radius: 20px;
+	width: 20%;
+	min-width: 300px;
+}
+
+#d4:hover, #d6:hover, #d8:hover, #d10:hover, #d12:hover, #d20:hover, #d100:hover, #d100all:hover {
+}
+
+#d4:hover > img, #d6:hover > img, #d8:hover > img, #d10:hover > img, #d12:hover > img, #d20:hover > img, #d100:hover > img, #d100all:hover > img {
+	filter: drop-shadow(0 0 10px #e6e6e6);
+}
+
+#popup{
+	display: none;
+	width: 30%;
+	height: auto;
+	border: 2px solid #e6e6e6;
+	z-index: 5;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate( -50%, -50%);
+  background: #1a1a1a;
+  min-width: 400px;
+  cursor: pointer;
+}
+
+#numberText{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  font-size: 4.4em;
+  transition: opacity .2s ease;
+}
+
+
+#clickClose{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(13,13,13,.74);
+  margin-top: 4px;
+}
+
+@media screen and (max-width: 1650px) {
+  #numberText{
+    font-size: 3.2em;
+  }
+}
